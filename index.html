@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html manifest="coco.manifest">
+<head>
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jqtouch.js"></script>
+	<script type="text/javascript" src="coco.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="jqtouch.css" />
+	<link rel="stylesheet" type="text/css" href="apple/theme.css" />
+  <link rel="stylesheet" type="text/css" href="coco.css" />
+	
+	<title>CoCo</title>
+</head>
+<body>
+
+<div id="jqt">
+<div id="home">
+	<div class="toolbar">
+		<h1>CoCo</h1>
+    <a href="#opt" class="button flipleft">Optionen</a>
+	</div>
+  <div id="coco">
+    <form>
+    <table>
+      <tr>
+        <td colspan="4"><b>RGB</b></td>
+      </tr>
+      <tr>
+        <td><input class="rgb" name="rgb_R" type="number" value="" size="9" /></td>
+        <td><input class="rgb" name="rgb_G" type="number" value="" size="9" /></td>
+        <td><input class="rgb" name="rgb_B" type="number" value="" size="9" /></td>
+        <td></td>
+      </tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr>
+        <td colspan="4"><b>CMYK</b></td>
+      </tr>
+        <td><input class="cmyk" name="cmyk_C" type="number" value="" size="9" /></td>
+        <td><input class="cmyk" name="cmyk_M" type="number" value="" size="9" /></td>
+        <td><input class="cmyk" name="cmyk_Y" type="number" value="" size="9" /></td>
+        <td><input class="cmyk" name="cmyk_K" type="number" value="" size="9" /></td>
+      </tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr>
+        <td colspan="4"><b>HEX</b></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input class="hex" name="hex" type="text" value="" size="10"/></td>
+        <td colspan="2"></td>
+      </tr>
+    </table>
+    </form>
+    <br />
+    <div id="colorDemo"></div>
+  </div>
+  <br /><br />
+</div>
+
+<div id="opt">
+  <div class="toolbar">
+		<a href="#" class="back button">Fertig</a>
+		<h1>Optionen</h1>
+	</div>
+  
+  <form>
+      <div class="option"># bei Hex Werten?<span class="toggle"><input type="checkbox" name="hex_sharp" /></span></div>
+      <div class="hint">
+        Soll Hex-Werten das # Symbol vorangestellt werden? 
+      </div>
+      <div class="option">CMYK in Prozent? <span class="toggle"><input type="checkbox" name="cmyk_percent" /></span></div>
+    </ul>
+    <div class="hint">
+        Soll bei den CMYK-Werten mit Prozentwerten gearbeitet werden? 
+      </div>
+  </form>
+</div>
+
+</div>
+</body>
+</html>
